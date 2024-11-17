@@ -9,8 +9,6 @@ const createBtnEl = document.querySelector("#controls button[data-create]");
 const destroyBtnEl = document.querySelector("#controls button[data-destroy]");
 const divBoxesEl = document.querySelector("#boxes");
 
-
-
 let number;
 
 const getNumber = (event) => {
@@ -47,8 +45,7 @@ const createBoxes = () => {
 
   divBoxesEl.append(...allBoxesEl);
   return (inputEl.value = "");
-
-  
+};
 
 const destroyBoxes = () => {
   divBoxesEl.querySelectorAll(".box").forEach((box) => {
