@@ -2,10 +2,10 @@
 
 const eachCategory = categories.querySelectorAll(".item");
 
-console.log(eachCategory.length);
+console.log(`Number of categories: ${eachCategory.length}`);
 eachCategory.forEach(function (category) {
-  console.log(category.querySelector("h2").textContent);
+  console.log(`Category: ${category.querySelector("h2").textContent}`);
   const categoryItem = category.querySelector("ul");
 
-  console.log(categoryItem.querySelectorAll("li").length);
+  console.log(`Elements: ${categoryItem.querySelectorAll("li").length}`);
 });
